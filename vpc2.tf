@@ -51,6 +51,7 @@ resource "aws_subnet" "priv2B" {
 
 resource "aws_internet_gateway" "igw2" {
   vpc_id = "${aws_vpc.vpc2.id}"
+
   tags {
     Name = "${var.VPC2_CIDR_PREFIX}-igw"
   }
@@ -65,10 +66,10 @@ resource "aws_route_table" "pub2RT" {
   }
 
   route {
-    cidr_block = "${var.VPC1_CIDR_PREFIX}.0.0/16"
+    cidr_block                = "${var.VPC1_CIDR_PREFIX}.0.0/16"
     vpc_peering_connection_id = "${aws_vpc_peering_connection.vpc1-2.id}"
   }
-  
+
   tags {
     Name = "${var.VPC2_CIDR_PREFIX}-pubRT"
   }

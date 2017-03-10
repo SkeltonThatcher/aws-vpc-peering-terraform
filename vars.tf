@@ -14,7 +14,3 @@ variable "VPC1_CIDR_PREFIX" {
 variable "VPC2_CIDR_PREFIX" {
   default = "10.100"
 }
-
-variable "VPC1_NAME" {}
-
-variable "VPC2_NAME" {}

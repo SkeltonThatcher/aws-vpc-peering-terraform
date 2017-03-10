@@ -14,6 +14,6 @@ resource "aws_vpc_peering_connection" "vpc1" {
     }
 
     tags {
-      Name = "VPC Peering between vpc1 and vpc2"
+      Name = "VPC Peering between ${var.VPC1_CIDR_PREFIX}-vpc and ${var.VPC2_CIDR_PREFIX}-vpc"
     }
 }

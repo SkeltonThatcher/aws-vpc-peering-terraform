@@ -1,7 +1,7 @@
 #!/bin/bash -e
  
 PROJECT="$(basename `pwd`)"
-BUCKET="specify-an-s3-bucket-here"
+BUCKET="specify-an-existing-s3-bucket"
 REGION="eu-west-1"
  
 init() {

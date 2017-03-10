@@ -1,6 +1,4 @@
-#=======================
-# VPC 2 + Subnets + igw2
-#=======================
+## VPC 2 + Subnets + igw2
 
 resource "aws_vpc" "vpc2" {
   cidr_block           = "${var.VPC2_CIDR_PREFIX}.0.0/16"

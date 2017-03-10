@@ -16,9 +16,15 @@ There is no peering route between the second and third VPCs.
 
 The plan also contains an init.sh script. This script enables remote state to AWS S3:
 
+### Prerequisites ###
+
+* AWS account - https://aws.amazon.com
+* Terraform installed - https://www.terraform.io
+* Git account and git installed - https://github.com
+* The ability to run .sh (shell) scripts if using Windows
+
 ### How do I get set up? ###
 
-* Install Terraform
 * Clone the repo
 * Create terraform.tfvars
 * Create an S3 bucket

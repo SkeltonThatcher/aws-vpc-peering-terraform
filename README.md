@@ -1,6 +1,6 @@
 # README #
 
-Terraform scripts to create two peered AWS VPCs.
+Terraform scripts to create three peered AWS VPCs.
 
 This TF plan will create x3 VPCs, each with the following resources:
 

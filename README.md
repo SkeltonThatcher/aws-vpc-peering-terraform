@@ -30,9 +30,9 @@ The plan also contains an init.sh script. This script enables remote state to AW
 * Create an S3 bucket
 * Update the init.sh BUCKET var with the S3 bucket name
 * Run the init.sh file
-* Run terraform plan
-* Run terraform apply
-* Run terraform destroy
+* Run terraform plan (to plan the deployment)
+* Run terraform apply (to apply the plan and deploy all resources)
+* Run terraform destroy (to destroy all deployed resources)
 
 ### Who do I talk to? ###
 

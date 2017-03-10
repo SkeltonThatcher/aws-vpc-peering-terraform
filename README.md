@@ -2,14 +2,16 @@
 
 Terraform scripts to create two peered AWS VPCs.
 
-The TF plan will create x2 VPCs, each with the following resources:
+This TF plan will create x3 VPCs, each with the following resources:
 
 * x1 public route table
 * x1 IGW
 * x2 public subnets
 * x2 private subnets
-* x1 peering connection
-* x1 peering connection route
+
+The second and third VPCs are peered with first VPC.
+
+There is no peering route between the second and third VPCs.
 
 The plan also contains an init.sh script. This script enables remote state to AWS S3:
 

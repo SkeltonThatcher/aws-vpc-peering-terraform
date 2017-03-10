@@ -67,7 +67,12 @@ resource "aws_route_table" "pub1RT" {
 
   route {
     cidr_block = "${var.VPC2_CIDR_PREFIX}.0.0/16"
-    vpc_peering_connection_id = "${aws_vpc_peering_connection.vpc1.id}"
+    vpc_peering_connection_id = "${aws_vpc_peering_connection.vpc1-2.id}"
+  }
+
+  route {
+    cidr_block = "${var.VPC3_CIDR_PREFIX}.0.0/16"
+    vpc_peering_connection_id = "${aws_vpc_peering_connection.vpc1-3.id}"
   }
 
   tags {

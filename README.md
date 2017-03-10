@@ -27,4 +27,4 @@ The plan also contains an init.sh script. This script enables remote state to AW
 
 ### Who do I talk to? ###
 
-* Richard Bosomworth
+* Rich Bos

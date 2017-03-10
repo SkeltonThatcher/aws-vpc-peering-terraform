@@ -1,8 +1,8 @@
 # README #
 
-Terraform scripts for AWS to create three peered VPCs.
+Terraform scripts to create three peered VPCs within a single AWS account.
 
-This TF plan will create three VPCs, each with the following resources:
+The TF plan will create three VPCs. Each VPC contains the following resources:
 
 * x1 public route table
 * x1 IGW

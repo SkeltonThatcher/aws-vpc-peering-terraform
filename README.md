@@ -27,7 +27,6 @@ The plan also contains an init.sh script. This script enables remote state to AW
 ### How do I get set up? ###
 
 * Clone the repo
-* Create an EC2 keypair in AWS
 * Create terraform.tfvars
 * Create an S3 bucket
 * Update the init.sh BUCKET var with the S3 bucket name and the desired AWS region

@@ -1,7 +1,6 @@
 aws_access_key = "your_aws_access_key"
 aws_secret_key = "your_aws_secret_key"
 aws_region = "enter_the_aws_region_to_use"
-key_pair = "enter_an_existing_aws_ec2_keypair_name"
 vpc1_cidr_prefix = "choose_a_two_block_cidr_prefix_for_the_first_vpc_such_as_10.50"
 vpc2_cidr_prefix = "choose_a_non_overlapping_two_block_cidr_prefix_for_the_second_VPC_such_as_10.100"
 vpc3_cidr_prefix = "choose_a_non_overlapping_two_block_cidr_prefix_for_the_third_VPC_such_as_10.150"

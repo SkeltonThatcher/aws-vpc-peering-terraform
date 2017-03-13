@@ -5,7 +5,7 @@ Terraform scripts to create three peered VPCs within a single AWS account.
 The TF plan will create three VPCs. Each VPC contains the following resources:
 
 * x1 public route table
-* x1 IGW
+* x1 internet gateway
 * x2 public subnets
 * x2 private subnets
 * Peering connections and peering routes

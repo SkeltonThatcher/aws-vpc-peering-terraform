@@ -29,7 +29,7 @@ The plan also contains an init.sh script. This script enables remote state to AW
 * Clone the repo
 * Create terraform.tfvars
 * Create an S3 bucket
-* Update the init.sh BUCKET var with the S3 bucket name and the desired AWS region
+* Update the init.sh BUCKET and REGION vars
 * Run the init.sh file
 * Run terraform plan (to plan the deployment)
 * Run terraform apply (to apply the plan and deploy all resources)

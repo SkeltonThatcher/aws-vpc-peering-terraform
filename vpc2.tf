@@ -15,7 +15,7 @@ resource "aws_subnet" "pub_2a" {
   availability_zone = "${var.aws_region}a"
 
   tags {
-    Name = "${var.vpc2_cidr_prefix}.1-pubA"
+    Name = "${var.vpc2_cidr_prefix}.1-pub-a"
   }
 }
 
@@ -25,7 +25,7 @@ resource "aws_subnet" "pub_2b" {
   availability_zone = "${var.aws_region}b"
 
   tags {
-    Name = "${var.vpc2_cidr_prefix}.2-pubB"
+    Name = "${var.vpc2_cidr_prefix}.2-pub-b"
   }
 }
 
@@ -35,7 +35,7 @@ resource "aws_subnet" "priv_2a" {
   availability_zone = "${var.aws_region}a"
 
   tags {
-    Name = "${var.vpc2_cidr_prefix}.3-privA"
+    Name = "${var.vpc2_cidr_prefix}.3-priv-a"
   }
 }
 
@@ -45,7 +45,7 @@ resource "aws_subnet" "priv_2b" {
   availability_zone = "${var.aws_region}b"
 
   tags {
-    Name = "${var.vpc2_cidr_prefix}.4-privB"
+    Name = "${var.vpc2_cidr_prefix}.4-priv-b"
   }
 }
 
@@ -71,7 +71,7 @@ resource "aws_route_table" "pub_2" {
   }
 
   tags {
-    Name = "${var.vpc2_cidr_prefix}-pubRT"
+    Name = "${var.vpc2_cidr_prefix}-pub"
   }
 }
 

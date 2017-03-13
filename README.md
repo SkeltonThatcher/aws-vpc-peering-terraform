@@ -19,6 +19,7 @@ The plan also contains an init.sh script. This script enables remote state to AW
 ### Prerequisites ###
 
 * AWS account - https://aws.amazon.com
+* AWS IAM user account with AWS access/secret keys and permission to create specified resources
 * Terraform installed - https://www.terraform.io
 * Git account and git installed - https://github.com
 * The ability to run .sh (shell) scripts if using Windows
@@ -26,8 +27,8 @@ The plan also contains an init.sh script. This script enables remote state to AW
 ### How do I get set up? ###
 
 * Clone the repo
-* Create terraform.tfvars
 * Create an EC2 keypair in AWS
+* Create terraform.tfvars
 * Create an S3 bucket
 * Update the init.sh BUCKET var with the S3 bucket name and the desired AWS region
 * Run the init.sh file

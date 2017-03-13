@@ -1,6 +1,6 @@
 ## VPC Peering connections
 
-resource "aws_vpc_peering_connection" "vpc1-2" {
+resource "aws_vpc_peering_connection" "vpc1_2" {
   peer_vpc_id = "${aws_vpc.vpc2.id}"
   vpc_id      = "${aws_vpc.vpc1.id}"
   auto_accept = true
@@ -14,11 +14,11 @@ resource "aws_vpc_peering_connection" "vpc1-2" {
   }
 
   tags {
-    Name = "VPC Peering between ${var.VPC1_CIDR_PREFIX}-vpc and ${var.VPC2_CIDR_PREFIX}-vpc"
+    Name = "VPC Peering between ${var.vpc1_cidr_prefix}-vpc and ${var.vpc2_cidr_prefix}-vpc"
   }
 }
 
-resource "aws_vpc_peering_connection" "vpc1-3" {
+resource "aws_vpc_peering_connection" "vpc1_3" {
   peer_vpc_id = "${aws_vpc.vpc3.id}"
   vpc_id      = "${aws_vpc.vpc1.id}"
   auto_accept = true
@@ -32,6 +32,6 @@ resource "aws_vpc_peering_connection" "vpc1-3" {
   }
 
   tags {
-    Name = "VPC Peering between ${var.VPC1_CIDR_PREFIX}-vpc and ${var.VPC3_CIDR_PREFIX}-vpc"
+    Name = "VPC Peering between ${var.vpc1_cidr_prefix}-vpc and ${var.vpc3_cidr_prefix}-vpc"
   }
 }
